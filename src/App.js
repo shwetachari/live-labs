@@ -1,26 +1,65 @@
+import * as _ from 'lodash';
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {
+  BrowserRouter,
+  Switch,
+  Route,
+  withRouter,
+  Redirect,
+  // useHistory,
+} from 'react-router-dom';
+import Root from './Root';
+import * as images from './images';
 
-function App() {
+import { leftConfigs, rightConfigs } from './gameConfigs';
+
+class App extends React.Component {
+  componentDidMount() {
+    const { history } = this.props;
+
+    const unblock = history.block((location, action) => {
+      if (window.confirm('Are you sure you want to leave this page?'))
+        unblock();
+    });
+
+    _.each(images, (image) => {
+      new Image().src = image;
+    });
+  }
+
+  render() {
+    const name = new URLSearchParams(window.location.search).get('name');
+
+    const leftProps = {
+      name: name || 'Shruti',
+      ...leftConfigs,
+    };
+
+    const rightProps = {
+      name: name || 'Sneha',
+      ...rightConfigs,
+    };
+
+    return (
+      <Switch>
+        <Route exact path="/moon">
+          <Root {...leftProps} />
+        </Route>
+        <Route exact path="/sun">
+          <Root {...rightProps} />
+        </Route>
+      </Switch>
+    );
+  }
+}
+
+const AppWithRouter = withRouter(App);
+function AppContainer() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Route path="/" component={AppWithRouter} />
+    </BrowserRouter>
   );
 }
 
-export default App;
+export default AppContainer;

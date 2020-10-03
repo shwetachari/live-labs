@@ -1,0 +1,104 @@
+.keyboardLock {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  color: rgb(20, 126, 251);
+
+  .text {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+
+    background: white;
+    border-radius: 5px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 60px 10px rgba(255, 255, 255, 0.6);
+
+    &:after {
+      content: '|';
+      font-size: 50px;
+      color: rgba(20, 126, 251, 0.6);
+      animation: blink-animation 0.9s steps(5, start) infinite;
+    }
+  }
+
+  .text.unlocked {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100px;
+    color: rgb(91, 194, 54);
+
+    background: white;
+    border-radius: 5px;
+    font-size: 40px;
+    margin-bottom: 30px;
+    box-shadow: 0px 0px 60px 10px rgba(255, 255, 255, 0.6);
+
+    span {
+      text-shadow: 0px 0px 10px rgba(91, 194, 54, 0.9);
+      animation: pulse 1s infinite alternate;
+    }
+
+    &:after {
+      content: '';
+      animation: none;
+    }
+  }
+
+  .rows {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+
+      .key {
+        &:hover {
+          cursor: pointer;
+        }
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        min-width: 50px;
+        height: 50px;
+        min-height: 50px;
+        margin: 10px;
+        border-radius: 5px;
+        background: white;
+        box-shadow: 0px 0px 60px 10px rgba(255, 255, 255, 0.6);
+      }
+    }
+  }
+
+  .delete {
+    &:hover {
+      cursor: pointer;
+    }
+    width: 100%;
+    background: white;
+    height: 50px;
+    min-height: 50px;
+    margin: 10px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 60px 10px rgba(255, 255, 255, 0.6);
+  }
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}

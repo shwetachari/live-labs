@@ -1,0 +1,52 @@
+.exitScreen {
+  .animated {
+    animation-name: text_appear;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    opacity: 0;
+
+    &.delay1 {
+      animation-delay: 0s;
+    }
+    &.delay2 {
+      animation-delay: 1.5s;
+    }
+    &.delay3 {
+      animation-delay: 3s;
+    }
+    &.delay4 {
+      animation-delay: 4.5s;
+    }
+    &.delay5 {
+      animation-delay: 6.5s;
+    }
+    &.delay6 {
+      animation-delay: 8.5s;
+    }
+  }
+
+  .button {
+    text-shadow: none;
+    font-family: 'Share Tech Mono', monospace;
+    color: black;
+    background-color: white;
+    font-size: 27px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px 20px white;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  @keyframes text_appear {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.fullScreenModal {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
+
+.fullScreenModal .contentWrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.fullScreenModal .content {
+  display: flex;
+  /* TODO: see if this messed with things */
+  width: 100%;
+  height: 100%;
+}
+
+.fullScreenModal .close {
+  display: block;
+  font-size: 25px;
+  color: white;
+  padding: 20px;
+  position: fixed;
+}
+
+.fullScreenModal .close:hover {
+  cursor: pointer;
+}
+
+.fullScreenModal::-webkit-scrollbar {
+  width: 0 !important;
+}
+.fullScreenModal {
+  overflow: -moz-scrollbars-none !important;
+}
+.fullScreenModal {
+  overflow: -moz-scrollbars-none !important;
+}

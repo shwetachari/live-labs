@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.0" viewBox="115 115 115 115" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g transform="translate(-9.5,-9.5)">
+<g transform="translate(129.25,9.5)">
+<path id="b" d="m10 130 90 90" stroke="#000" stroke-width="1px"/>
+<use transform="matrix(-1,0,0,1,110,0)" xlink:href="#b"/>
+</g>
+<g transform="translate(29.25 142.43)">
+<path id="a" d="m157 35a2 2 0 1 1-4 0 2 2 0 1 1 4 0z"/>
+</g>
+<use transform="translate(29.25 156.57)" xlink:href="#a"/>
+<use transform="translate(22.179,149.5)" xlink:href="#a"/>
+<use transform="translate(36.321,149.5)" xlink:href="#a"/>
+<text x="173.23477" y="170.57684" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">W</text>
+<text x="155.33701" y="191.79004" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">X</text>
+<text x="198.22238" y="191.79004" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">Y</text>
+<text x="176.99942" y="213.00323" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">Z</text>
+</g>
+</svg>

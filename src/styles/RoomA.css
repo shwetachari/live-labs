@@ -1,0 +1,213 @@
+.tornPaper {
+  padding: 100px;
+  max-width: 600px;
+  background-image: url('../images/torn_paper.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Reenie Beanie', cursive;
+}
+
+.tornPaper strong {
+  font-weight: 900;
+}
+
+.stickyNote {
+  padding: 100px;
+  max-width: 600px;
+  background-image: url('../images/sticky_note.png');
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+  font-family: 'Reenie Beanie', cursive;
+  margin: 10% auto;
+  height: 100px;
+}
+
+.tornPaper strong {
+  font-weight: 900;
+}
+
+.blue {
+  color: rgb(20, 126, 251);
+}
+
+.red {
+  color: rgb(186, 12, 46);
+}
+
+.gray {
+  color: rgb(153, 153, 153);
+}
+
+.green {
+  color: rgb(91, 194, 54);
+}
+
+.unlockedPhone {
+  padding: 15px 10px 5px;
+  height: 395px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.unlockedPhone h1 {
+  padding: 10px 0px;
+  margin: 0;
+  font-size: 25px;
+}
+
+.unlockedPhone .voicemails {
+  height: 360px;
+  overflow-y: scroll;
+}
+
+.unlockedPhone .voicemails .record {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.unlockedPhone .voicemails .record:hover {
+  cursor: pointer;
+}
+
+.unlockedPhone .voicemails .record .contact {
+  padding-right: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.unlockedPhone .voicemails .record .location {
+  padding-right: 5px;
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.unlockedPhone .voicemails .record .right {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.unlockedPhone .voicemails .record .day {
+  padding-right: 5px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.unlockedPhone .voicemails .record .length {
+  padding-right: 5px;
+  font-size: 13px;
+  text-align: right;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.unlockedPhone .voicemails .playOptions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.unlockedPhone .voicemails .playOptions .left:hover {
+  cursor: pointer;
+}
+
+.unlockedPhone .voicemails .playOptions .left .icon {
+  padding: 5px 2px 10px;
+}
+.unlockedPhone .voicemails .playOptions .right .icon {
+  padding: 5px 2px 10px 15px;
+}
+
+.unlockedPhone .voicemails::-webkit-scrollbar {
+  width: 0 !important;
+}
+.unlockedPhone .voicemails {
+  overflow: -moz-scrollbars-none;
+}
+.unlockedPhone .voicemails {
+  overflow: -moz-scrollbars-none;
+}
+
+.unlockedPhone .footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.unlockedPhone .verticalGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: sans-serif;
+}
+
+.unlockedPhone .verticalGroup .text {
+  padding-top: 3px;
+  font-size: 9px;
+}
+
+.unlockedComputer {
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  color: black;
+  overflow: hidden;
+}
+
+.unlockedComputer .nav {
+  display: flex;
+  padding: 10px 30px 10px 15px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+}
+
+.unlockedComputer .nav .circle {
+  padding-right: 15px;
+}
+
+.unlockedComputer .content {
+  padding: 30px;
+  width: 540px;
+  overflow-y: hidden;
+}
+
+.unlockedComputer .content::-webkit-scrollbar {
+  width: 0 !important;
+}
+.unlockedComputer .content {
+  overflow: -moz-scrollbars-none;
+}
+.unlockedComputer .content {
+  overflow: -moz-scrollbars-none;
+}
+
+.unlockedComputer img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.unlockedComputer img:hover,
+.unlockedComputer .doorCode:hover {
+  cursor: pointer;
+}
+
+.unlockedComputer .doorCode {
+  position: relative;
+  bottom: 50px;
+  color: blue;
+  top: 275px;
+  left: 75px;
+  font-weight: bold;
+  font-family: 'Share Tech Mono', monospace;
+  font-size: 25px;
+}

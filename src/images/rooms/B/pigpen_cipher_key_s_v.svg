@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.0" viewBox="0 115 115 115" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g transform="translate(-9.5,-9.5)">
+<g transform="translate(9.25,9.5)">
+<path id="a" d="m10 130 90 90" stroke="#000" stroke-width="1px"/>
+<use transform="matrix(-1,0,0,1,110,0)" xlink:href="#a"/>
+</g>
+<text x="57.062901" y="170.56708" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">S</text>
+<text x="36.220795" y="191.79004" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">T</text>
+<text x="77.343483" y="191.64844" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">U</text>
+<text x="56.511143" y="213.00323" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">V</text>
+</g>
+</svg>

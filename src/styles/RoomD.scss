@@ -1,0 +1,88 @@
+.book {
+  width: 80%;
+  height: 80%;
+  margin: 2% auto;
+  color: black;
+  border: 25px solid rgb(92, 51, 5);
+  font-family: 'Reenie Beanie', sans-serif;
+  background: white;
+
+  &.blacklight .page {
+    background: rgba(mix(rgb(11, 5, 92), white, 60%), 1);
+  }
+
+  .emptyPage {
+    width: 100%;
+    height: 100%;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .page {
+    width: 50%;
+    padding: 2% 4%;
+    background: white;
+    border: 1px solid gray;
+    overflow-y: scroll;
+    &::-webkit-scrollbar {
+      width: 0 !important;
+    }
+    overflow: -moz-scrollbars-none !important;
+    overflow: -moz-scrollbars-none !important;
+
+    h1 {
+      font-size: 50px;
+    }
+    p {
+      font-size: 30px;
+      padding: 10px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.left {
+      border-right: 2px solid rgba(0, 0, 0, 0.4);
+      transform-origin: right;
+      &:after {
+        left: 10%;
+      }
+    }
+    &.right {
+      transform-origin: left;
+
+      &.open {
+        position: absolute;
+        transform: perspective(1200px) translateZ(0px) translateX(0px)
+          translateY(0px) rotateY(-180deg);
+        z-index: 15;
+      }
+
+      &:after {
+        right: 10%;
+      }
+    }
+  }
+}
+
+.lastBookPage .nonogram {
+  color: white !important;
+  flex-wrap: wrap;
+
+  .grid .row .cell {
+    border: 1px solid lighten(rgb(11, 5, 92), 30%);
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    &.empty {
+      background: white;
+    }
+    &.filled {
+      background: lighten(rgb(11, 5, 92), 30%);
+    }
+  }
+}

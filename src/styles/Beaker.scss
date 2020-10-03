@@ -1,0 +1,193 @@
+// Generic variables
+$white: #fff;
+$black: #000;
+$font-size: 260%; // This changes the size of the logo and scales proportionally
+
+// $darkest-beaker_color: darken($beaker_color, 28%);
+// $dark-beaker_color: darken($beaker_color, 17%);
+// $light-beaker_color: lighten($beaker-color, 17%);
+// $lightest-beaker_color: lighten($beaker-color, 28%);
+// $bubble_color: mix($white, $lightest-beaker_color, 30%);
+
+@mixin beaker($beaker_color) {
+  animation: hueSaturation 5s ease-in-out infinite;
+  font: 200 $font-size Lato, Avenir, Futura, Arial, sans-serif;
+  letter-spacing: -0.075em;
+  position: relative;
+  margin: 1.75em auto 1.85em;
+  width: 4.08em;
+  &:before,
+  &:after {
+    border-radius: 50%;
+    content: '';
+    position: absolute;
+    display: block;
+    z-index: 100;
+  }
+  &:before {
+    box-shadow: inset -0.03em 0 0.01em rgba(lighten($beaker-color, 17%), 0.3),
+      inset 0.03em 0 0.01em rgba(lighten($beaker-color, 17%), 0.3),
+      0 -0.01em 0 0.01em rgba(mix(lighten($beaker-color, 28%), $white, 25%), 0.8);
+    left: 0.48em;
+    height: 0.02em;
+    width: 0.59em;
+  }
+  &:after {
+    bottom: -0.8em;
+    box-shadow: inset 0.18em 0.06em 0.13em -0.09em rgba(darken($beaker_color, 6%), 0.6),
+      inset 0 0.05em 0.05em rgba(lighten($beaker-color, 28%), 0.6),
+      inset 0 -0.05em 0.05em rgba(lighten($beaker-color, 28%), 0.6),
+      inset 0 -0.5em 0.5em rgba($white, 0.8),
+      0 0 0.03em 0.03em rgba(lighten($beaker-color, 17%), 0.6),
+      0.02em 0.45em 0.1em -0.02em rgba($beaker_color, 0.99),
+      0.02em 0.4em 0.05em -0.02em rgba(lighten($beaker-color, 17%), 0.5),
+      0.02em 0.3em 0.4em 0.08em rgba($beaker_color, 0.75),
+      -0.28em 0.6em 0.2em -0.02em rgba($black, 0.25),
+      0.28em 0.6em 0.2em -0.02em rgba($black, 0.25);
+    height: 0.15em;
+    left: 0.232em;
+    width: 1.07em;
+  }
+
+  div {
+    background: rgba(lighten($beaker-color, 28%), 0.15);
+    box-shadow: -0.02em 0 0 rgba(lighten($beaker-color, 17%), 0.15),
+      0.02em 0 0 rgba($beaker_color, 0.35),
+      0 0.2em 0.15em rgba(lighten($beaker-color, 28%), 0.15);
+    display: block;
+    height: 0.41em;
+    margin-left: 0.5em;
+    position: relative;
+    width: 0.55em;
+    z-index: 1;
+    &:before,
+    &:after {
+      background: rgba($white, 0);
+      bottom: -1.3em;
+      content: '';
+      display: block;
+      height: 1.3em;
+      position: absolute;
+      width: 0.77em;
+      z-index: -1;
+    }
+    &:before {
+      border-radius: 0 1.6em 0 0.5em;
+      box-shadow: inset 0 -0.25em 0.15em -0.15em
+          rgba(darken($beaker_color, 28%), 0.75),
+        inset -0.02em -0.73em 0 -0.21em $beaker_color,
+        inset 0.02em -0.02em 0 rgba(lighten($beaker-color, 17%), 0.15),
+        inset 0.42em -0.02em 0.8em -0.4em rgba(lighten($beaker-color, 28%), 0.5);
+      left: -0.26em;
+      transform: skewX(-20deg);
+    }
+    &:after {
+      border-radius: 1.6em 0 0.5em 0;
+      box-shadow: inset 0 -0.25em 0.15em -0.15em
+          rgba(darken($beaker_color, 28%), 0.75),
+        inset 0.02em -0.73em 0 -0.21em $beaker_color,
+        inset -0.02em -0.02em 0 rgba(lighten($beaker-color, 17%), 0.4),
+        inset -0.42em -0.02em 0.8em -0.4em rgba(lighten($beaker-color, 28%), 0.5);
+      right: -0.26em;
+      transform: skewX(20deg);
+    }
+  }
+
+  .bubble {
+    animation: bubbleFloat 4s 1s ease-in-out infinite;
+    border-radius: 100%;
+    bottom: -1.2em;
+    box-shadow: inset -0.05em -0.05em 0.3em -0.04em rgba(mix($white, lighten($beaker-color, 28%), 30%), 0.99),
+      inset 0.02em 0.02em 0.3em
+        rgba(mix($white, lighten($beaker-color, 28%), 30%), 0.5);
+    display: block;
+    left: 0em;
+    opacity: 0;
+    position: absolute;
+    transform-style: preserve-3d;
+    z-index: 0;
+    &.one {
+      height: 0.4em;
+      width: 0.4em;
+    }
+    &.two {
+      animation-delay: 2.5s;
+      bottom: -1.26em;
+      height: 0.5em;
+      left: 0.11em;
+      transform: rotate(0deg);
+      width: 0.5em;
+    }
+    &.three {
+      animation-delay: 1.5s;
+      animation-duration: 6s;
+      bottom: -1.1em;
+      height: 0.7em;
+      left: -0.08em;
+      transform: rotate(0deg);
+      width: 0.7em;
+    }
+    &.four {
+      animation-delay: 2s;
+      animation-duration: 9s;
+      bottom: -1em;
+      height: 0.3em;
+      left: 0.175em;
+      transform: rotate(0deg);
+      width: 0.3em;
+    }
+  }
+
+  .symbol {
+    position: absolute;
+    color: black;
+    z-index: 200;
+    font-size: $font-size/4;
+    padding-left: 1em;
+  }
+}
+
+// bubbleFloat Animation
+@keyframes bubbleFloat {
+  0% {
+    transform: translateY(0em) scale(0.9);
+    opacity: 0;
+  }
+  1% {
+    transform: translateY(0.3em) scale(0.3);
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(-0.1em) scale(0.9);
+    opacity: 1;
+  }
+  96% {
+    transform: translateY(-2.45em) scale(0.5);
+    opacity: 1;
+  }
+  99% {
+    transform: translateY(-2.5em) scale(3);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-2.5em) scale(0.9);
+    opacity: 0;
+  }
+}
+
+// beaker colors
+$red_beaker_color: #e74d3c;
+$green_beaker_color: #66c965; // This changes the color of the whole beaker without loosing any detail
+$blue_beaker_color: #52b1e4; // for logo "."
+
+.beaker.red {
+  @include beaker($red_beaker_color);
+}
+
+.beaker.green {
+  @include beaker($green_beaker_color);
+}
+
+.beaker.blue {
+  @include beaker($blue_beaker_color);
+}

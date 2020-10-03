@@ -1,0 +1,288 @@
+.phone p,
+.phone button,
+.phone .letters,
+.phone h2 {
+  font-family: sans-serif;
+  margin-top: 0;
+  color: white;
+}
+
+.shake {
+  animation: shake 0.82s cubic-bezier(0.36, 0.07, 0.19, 0.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
+
+.phone .passcode {
+  text-align: center;
+}
+
+.phone .passcode span {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid white;
+}
+
+.phone .passcode span.filled {
+  background: white;
+}
+
+.phone p {
+  font-weight: lighter;
+  letter-spacing: 0.15px;
+}
+
+.phone button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  display: inline-block;
+  margin: 5px;
+  background-color: rgba(213, 213, 213, 0.1);
+  font-size: 16px;
+  transition: background-color 1s;
+}
+
+.phone button:hover {
+  cursor: pointer;
+}
+
+.phone button:active {
+  background-color: rgba(213, 213, 213, 0.7);
+}
+
+.phone button:focus {
+  outline: none;
+}
+
+/*==== classes ====*/
+
+.phone {
+  background-color: white;
+  margin: 75px auto;
+  width: 300px;
+  height: 510px;
+  border: 2.5px solid #a5a3a3;
+  border-bottom: 0.5px solid black;
+  border-radius: 20px;
+}
+
+.phone .screen {
+  height: 415px;
+  width: 290px;
+  margin: 45px auto;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 5px;
+  border: 0.5px solid black;
+}
+
+.phone .screen:before {
+  height: 415px;
+  width: 290px;
+  /* margin: 45px auto; */
+  border-radius: 5px;
+  border: 0.5px solid black;
+
+  background: linear-gradient(to bottom, aqua, #fef9b9);
+  margin: 0 auto;
+}
+
+.phone .touch {
+  font-size: 15px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.phone .grid {
+  display: grid;
+  grid-template-areas:
+    '1 2 3 '
+    '4 5 6'
+    '7 8 9'
+    '. 0 .';
+  grid-gap: 10px;
+  margin: 10px 50px;
+}
+
+.phone .emergency,
+.phone .cancel {
+  font-size: 11px;
+  position: relative;
+  transition: color 0.5s;
+  color: white;
+  display: inline-block;
+  margin-top: 15px;
+  bottom: 7px;
+}
+
+.phone .emergency {
+  left: 45px;
+}
+
+.phone .cancel {
+  left: 120px;
+}
+
+.phone .emergency:hover,
+.phone .cancel:hover {
+  cursor: pointer;
+}
+
+.phone .emergency:active,
+.phone .cancel:active {
+  color: #777;
+  transition: color 0.5s;
+}
+
+.phone .letters {
+  font-size: 7px;
+}
+
+.phone .screenContent {
+  position: relative;
+  border-radius: 5px;
+  bottom: 75px;
+  height: 415px;
+  padding-top: 55px;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.phone .unlockedScreen {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 415px;
+}
+
+.phone .home {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  position: relative;
+  left: 124px;
+  bottom: 121px;
+  border: 1.5px solid rgb(101, 101, 101);
+  border-radius: 50%;
+  background-color: #ececec;
+}
+
+.phone .camera {
+  width: 8px;
+  height: 8px;
+  display: inline-block;
+  background-color: black;
+  border-radius: 50%;
+  position: relative;
+  bottom: 85px;
+  left: 80px;
+  border: 1px solid grey;
+}
+
+.phone .speaker {
+  width: 50px;
+  height: 4px;
+  background-color: black;
+  border-radius: 20%;
+  position: relative;
+  left: 120px;
+  bottom: 97px;
+  border: 1px solid grey;
+}
+
+.phone .zero {
+  display: block;
+  position: relative;
+  bottom: 7px;
+  left: 116px;
+}
+
+.phone .percent,
+.phone .battery {
+  color: white;
+  position: relative;
+  z-index: 100;
+}
+
+.phone .battery {
+  width: 50px;
+  left: 264px;
+  bottom: 50px;
+  font-size: 13px;
+}
+
+.phone .percent {
+  font-size: 11px;
+  left: 236px;
+  bottom: 23px;
+}
+
+.phone .signal {
+  color: white;
+  font-size: 10px;
+  display: inline-block;
+  padding-left: 5px;
+  padding-top: 5px;
+  z-index: 100 !important;
+}
+
+.phone .lock {
+  position: relative;
+  color: white;
+  font-size: 10px;
+  left: 85px;
+  top: 1px;
+  z-index: 100;
+}
+
+#phone {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #4ecc48;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  position: relative;
+  bottom: 12px;
+  right: 6px;
+}
+
+.phone .powerBtn {
+  display: inline-block;
+  width: 5px;
+  height: 35px;
+  background-color: #a5a3a3;
+  border-radius: 50px;
+  position: relative;
+  bottom: 320px;
+  left: 295px;
+}

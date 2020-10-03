@@ -1,0 +1,88 @@
+.computer {
+  width: 60%;
+  min-width: 600px;
+  margin: 0 auto;
+}
+
+.login {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login .row {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login .inputBox {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login .caret {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 85px;
+  padding: 15px 30px;
+  padding-right: 0;
+}
+
+.login .caret:hover {
+  cursor: pointer;
+}
+
+.login .inputBox .icon {
+  padding: 15px 30px;
+  font-size: 25px;
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.login input {
+  flex-grow: 1;
+  padding: 5px;
+  font-size: 25px;
+  background: none !important;
+  box-shadow: none !important;
+  border: none !important;
+  outline: none !important;
+  -webkit-appearance: none !important;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.popover {
+  width: 100%;
+  margin-top: 20px;
+  color: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  font-size: 20px;
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.8);
+  transition: all 0.5s ease-in-out;
+}
+
+.error {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  color: rgb(186, 12, 46);
+  background-color: rgba(186, 12, 46, 0.3);
+  transition: all 0.5s ease-in-out;
+}
+
+.error .icon {
+  padding-right: 15px;
+}

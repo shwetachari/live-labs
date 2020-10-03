@@ -1,0 +1,82 @@
+.nonogram {
+  display: flex;
+  flex-direction: row;
+
+  .nonogramCode {
+    padding: 50px;
+    font-size: 200px;
+    font-family: 'Reenie Beanie', sans-serif;
+  }
+
+  .clue {
+    width: 51px;
+    height: 51px;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .left .rowClues {
+    display: flex;
+    flex-direction: column;
+
+    .clue {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+
+      div {
+        padding-right: 15px;
+      }
+    }
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+
+    .colClues {
+      display: flex;
+      flex-direction: row;
+
+      .clue {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        div {
+          padding-bottom: 15px;
+        }
+      }
+    }
+  }
+
+  .grid {
+    display: flex;
+    flex-direction: column;
+
+    .row {
+      display: flex;
+      flex-direction: row;
+
+      .cell {
+        width: 50px;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        border: 1px solid black;
+
+        &:hover {
+          cursor: pointer;
+        }
+
+        &.empty {
+          background: white;
+        }
+        &.filled {
+          background: rgb(20, 126, 251);
+        }
+      }
+    }
+  }
+}

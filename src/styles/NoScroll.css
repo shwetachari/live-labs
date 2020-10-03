@@ -1,0 +1,9 @@
+/* div::-webkit-scrollbar {
+  width: 0 !important;
+}
+div {
+  overflow: -moz-scrollbars-none !important;
+}
+div {
+  overflow: -moz-scrollbars-none !important;
+} */

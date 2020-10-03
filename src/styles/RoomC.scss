@@ -1,0 +1,58 @@
+.tile1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+
+  .yellowBoxes {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .yellowBox {
+    width: 35%;
+    height: 35%;
+    background: #ffd86b;
+    border: 2px solid black;
+  }
+
+  .key {
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 400%;
+    font-family: 'Reenie Beanie', sans-serif;
+    font-weight: bold;
+  }
+}
+
+.exitNonograms {
+  .clue {
+    display: none !important;
+  }
+
+  .nonogram {
+    color: white !important;
+    padding: 0;
+    margin: 0;
+    width: 200px;
+
+    .grid .row .cell {
+      border: none;
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &.empty {
+        background: none;
+      }
+      &.filled {
+        background: white;
+      }
+    }
+  }
+}

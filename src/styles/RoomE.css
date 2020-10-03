@@ -1,0 +1,36 @@
+.periodicTable {
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.roomECarousels {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  max-height: 600px;
+  overflow-y: scroll;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.roomECarousels::-webkit-scrollbar {
+  width: 0 !important;
+}
+.roomECarousels {
+  overflow: -moz-scrollbars-none !important;
+}
+.roomECarousels {
+  overflow: -moz-scrollbars-none !important;
+}
+
+.roomECarousels > div {
+  margin: 15px;
+}
+
+.roomECarousels img {
+  max-width: 100px;
+  margin-right: 20px;
+}

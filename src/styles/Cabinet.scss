@@ -1,0 +1,132 @@
+.pigpen {
+  font-family: 'PigpenCipher';
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  padding-left: 0;
+}
+
+.bookshelf {
+  $brown: #a87328;
+  $darkblue: #0c347d;
+  $umber: #54290c;
+  $springer: #eded80;
+
+  width: 50%;
+  max-width: 800px;
+  min-width: 600px;
+  height: 460px;
+  margin: 0 auto;
+  margin-top: 10%;
+  border: 10px $brown solid;
+  overflow: hidden;
+  background-image: linear-gradient(
+    darken($brown, 32%),
+    darken($brown, 30%) 220px,
+    lighten($brown, 4%) 220px,
+    lighten($brown, 4%) 222px,
+    $brown 222px,
+    $brown 228px,
+    darken($brown, 4%) 228px,
+    darken($brown, 4%) 230px
+  );
+  background-size: 10px 230px;
+
+  .book {
+    height: 200px;
+    width: 40px;
+    float: left;
+    color: white;
+    font-family: sans-serif;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    transition: transform 0.5s ease;
+    border: 0;
+  }
+
+  .book.bold {
+    font-family: Verdana, sans-serif;
+  }
+
+  .book.fancy {
+    font-family: 'Grenze Gotisch', cursive;
+    font-weight: 100;
+    font-size: 1.1em;
+  }
+
+  .book-tilted {
+    float: left;
+    width: 74px;
+  }
+
+  .book-tilted > .book {
+    transform: translateY(-3px) translateX(15px) rotate(9deg);
+  }
+
+  .book:hover {
+    transform: scale(1.1);
+  }
+
+  .book-green {
+    background-color: darkgreen;
+    border-left: 2px solid lighten(darkgreen, 4%);
+    border-right: 2px solid darken(darkgreen, 4%);
+  }
+
+  .book-blue {
+    background-color: $darkblue;
+    border-left: 2px solid lighten($darkblue, 4%);
+    border-right: 2px solid darken($darkblue, 4%);
+  }
+
+  .book-umber {
+    background-color: $umber;
+    border-left: 2px solid lighten($umber, 4%);
+    border-right: 2px solid darken($umber, 4%);
+  }
+
+  .book-springer {
+    background-color: $springer;
+    border-left: 2px solid lighten($springer, 4%);
+    border-right: 2px solid darken($springer, 4%);
+    color: black;
+  }
+
+  .book h2 {
+    padding: 0;
+    padding-left: 2px;
+    font-size: 1em;
+    transform-origin: 0% 0%;
+    transform: translateY(2px);
+    width: 140px;
+  }
+
+  .book h3 {
+    padding: 0;
+    padding-left: 2px;
+    font-size: 0.7em;
+    transform-origin: 0 0;
+    transform: translateY(-11px);
+    font-weight: normal;
+  }
+
+  .book p {
+    padding: 0;
+    font-size: 0.7em;
+  }
+
+  .book .text {
+    height: 40px;
+    min-width: 185px;
+    transform-origin: 10% 50%;
+    transform: rotate(0.25turn);
+    padding: 0 5px;
+    margin: 0;
+    line-height: 0.9em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+}

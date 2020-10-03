@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg version="1.0" viewBox="0 0 115 115" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<g transform="translate(-9.5,-9.5)">
+<g transform="translate(9.25,9.5)">
+<path id="a" d="m40 10v90" stroke="#000" stroke-width="1px"/>
+<use transform="translate(30)" xlink:href="#a"/>
+<use id="b" transform="matrix(0,1,-1,0,110.5,0)" xlink:href="#a"/>
+<use transform="translate(0,30)" xlink:href="#b"/>
+</g>
+<use transform="translate(29.25 156.57)" xlink:href="#p6"/>
+<use transform="translate(22.179,149.5)" xlink:href="#p6"/>
+<use transform="translate(36.321,149.5)" xlink:href="#p6"/>
+<text x="26.760742" y="41.790039" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">A</text>
+<text x="56.663086" y="41.790039" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">B</text>
+<text x="87.302734" y="41.780273" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">C</text>
+<text x="25.803711" y="71.790039" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">D</text>
+<text x="57.483398" y="71.790039" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">E</text>
+<text x="87.59082" y="71.790039" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">F</text>
+<text x="26.53125" y="101.78027" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">G</text>
+<text x="56.130859" y="101.79004" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">H</text>
+<text x="90.78418" y="101.79004" fill="#000000" font-family="Bitstream Vera Sans" font-size="20px" font-weight="bold">I</text>
+</g>
+</svg>

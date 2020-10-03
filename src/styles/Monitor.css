@@ -1,0 +1,44 @@
+.monitorButton {
+  width: 100%;
+  height: 100%;
+  background: skyblue;
+  opacity: 0.9;
+  border-radius: 50%;
+  position: absolute;
+  box-shadow: 0 0 10px skyblue, 0 0 20px skyblue, 0 0 30px skyblue,
+    0 0 60px skyblue, 0 0 150px skyblue;
+}
+
+.monitorButtonDisabled {
+  width: 100%;
+  height: 100%;
+  background: rgba(93, 99, 98, 0.5);
+  border-radius: 50%;
+  position: absolute;
+}
+
+.elementsList {
+  height: 100%;
+  list-style: none;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+.elementsList::-webkit-scrollbar {
+  width: 0 !important;
+}
+.elementsList {
+  overflow: -moz-scrollbars-none !important;
+}
+.elementsList {
+  overflow: -moz-scrollbars-none !important;
+}
+
+.elementsList .elementName {
+  color: rgb(65, 65, 65);
+  font-family: 'Share Tech Mono', monospace;
+  font-weight: bold;
+  font-size: 50px;
+  padding: 20px;
+  text-align: center;
+}
