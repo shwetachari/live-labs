@@ -1,8 +1,17 @@
 ## Live Labs
 
-Check out the project here:
-https://live-labs.vercel.app/moon
-https://live-labs.vercel.app/sun
+#### Check out the project here:
+
+- https://live-labs.vercel.app/moon
+- https://live-labs.vercel.app/sun
+
+#### Notes:
+
+- Compatible with Google Chrome. Use any other browsers at your own risk.
+- Not responsive -- breaks at small resolutions, optimized for 2880px x 1800px window
+- Absolutely not the most performant website around. Patience required while assets load.
+
+---
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
