@@ -1,4 +1,4 @@
-## Live Labs
+## LIVE Labs
 
 #### Check out the project here:
 
