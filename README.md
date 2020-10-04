@@ -9,7 +9,7 @@
 
 - This is a hacky, quickly thrown together project made as a birthday present for a pair of twins. If you would like to **completely ruin your gaming experience**, take a look at the [game configs](https://github.com/shwetachari/live-labs/blob/main/src/gameConfigs.js) for the answers to all the puzzles.
 - Compatible with Google Chrome. Use any other browsers at your own risk.
-- Not responsive -- breaks at small resolutions, optimized for 2880px x 1800px window size
+- Not responsive -- breaks at small resolutions, optimized for 1440px x 900px window size
 - Absolutely not the most performant website around. Patience required while assets load.
 
 ---
