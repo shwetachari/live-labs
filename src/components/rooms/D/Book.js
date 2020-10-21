@@ -136,7 +136,7 @@ class Book extends React.Component {
 
   render() {
     const { isBlackLightOn } = this.context;
-    const { currentPage, flipped } = this.state;
+    const { currentPage } = this.state;
 
     return (
       <div className={isBlackLightOn ? 'book blacklight' : 'book'}>

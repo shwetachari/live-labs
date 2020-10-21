@@ -7,7 +7,6 @@ import {
   faThermometerThreeQuarters,
   faEquals,
   faFlask,
-  faBalanceScale,
 } from '@fortawesome/free-solid-svg-icons';
 
 class RoomBLockedBox extends React.Component {

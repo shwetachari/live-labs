@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppContext, VIEWS } from '../../../AppContext';
+import { AppContext } from '../../../AppContext';
 import ClickableRoom from '../../common/ClickableRoom';
 import Swing from '../../common/Swing';
 import roomAWall from '../../../images/rooms/A/wall.png';
@@ -61,6 +61,7 @@ class RoomAWall extends React.Component {
                         backgroundColor: '#755449',
                         zIndex: 10,
                       }}
+                      alt="Painting"
                     />
                   </div>
                 </Swing>

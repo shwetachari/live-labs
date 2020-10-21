@@ -26,6 +26,7 @@ class RoomD extends React.Component {
         onClick={() =>
           setFields({ activeDialogue: 'This picture looks out of place.' })
         }
+        alt="Butterfly"
       />
     );
     setFields({ modalContent });

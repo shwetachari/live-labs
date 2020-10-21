@@ -1,4 +1,3 @@
-import * as _ from 'lodash';
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBalanceScale } from '@fortawesome/free-solid-svg-icons';

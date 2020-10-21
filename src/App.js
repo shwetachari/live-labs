@@ -5,7 +5,6 @@ import {
   Switch,
   Route,
   withRouter,
-  Redirect,
   // useHistory,
 } from 'react-router-dom';
 import Root from './Root';

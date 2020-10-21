@@ -1,5 +1,5 @@
 import React from 'react';
-import { AppContext, VIEWS } from '../../../AppContext';
+import { AppContext } from '../../../AppContext';
 import ClickableRoom from '../../common/ClickableRoom';
 import roomALockerUnlocked from '../../../images/rooms/A/locker_unlocked.png';
 import Nonogram from '../../common/Nonogram';

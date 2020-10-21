@@ -311,10 +311,10 @@ export const leftConfigs = {
   roomAComputerPassword: 'NOT EXPERIMENT',
   roomAStickyNote: (
     <div>
-      <div style={{ display: 'inline-block', padding: 10 }}>___</div>
-      <div style={{ display: 'inline-block', padding: 10 }}>_____</div>
-      <div style={{ display: 'inline-block', padding: 10 }}>_</div>
-      <div style={{ display: 'inline-block', padding: 10 }}>_______</div>
+      <div style={{ padding: 5 }}>The smallest goes after the small.</div>
+      <div style={{ padding: 5 }}>The biggest is last.</div>
+      <div style={{ padding: 5 }}>The small goes before the big.</div>
+      <div style={{ padding: 5 }}>The smallest is adjacent to the biggest.</div>
     </div>
   ),
   roomAStep1: (
@@ -344,7 +344,7 @@ export const leftConfigs = {
   yellowDoorKey: _.pick(yellowDoorKey, ['H', 'N', 'R', 'S', 'T']),
   morseKey: _.filter(
     morseCode.map((code, i) => ({ num: i, code })),
-    (_code, i) => i % 2 == 0
+    (_code, i) => i % 2 === 0
   ),
   roomEBooks: [
     {
@@ -506,7 +506,7 @@ export const rightConfigs = {
   yellowDoorKey: _.pick(yellowDoorKey, ['A', 'E', 'I', 'O', 'U']),
   morseKey: _.reject(
     morseCode.map((code, i) => ({ num: i, code })),
-    (_code, i) => i % 2 == 0
+    (_code, i) => i % 2 === 0
   ),
   roomEBooks: [
     {

@@ -87,6 +87,7 @@ class RoomAComputer extends React.Component {
                     activeDialogue: `It's some kind of electronic door lock diagram.`,
                   })
                 }
+                alt="Keypad"
               />
             </div>
           </div>

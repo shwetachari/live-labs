@@ -2,11 +2,7 @@ import * as _ from 'lodash';
 import React from 'react';
 import { DraggableCore } from 'react-draggable';
 import '../../styles/CarouselLock.css';
-import {
-  faUnlockAlt,
-  faUnlock,
-  faLock,
-} from '@fortawesome/free-solid-svg-icons';
+import { faUnlock, faLock } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 class Column extends React.Component {

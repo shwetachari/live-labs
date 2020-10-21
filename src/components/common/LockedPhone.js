@@ -30,7 +30,7 @@ class LockedPhone extends React.Component {
   ];
 
   updateCurrentCode = (val) => {
-    const { currentCode, playingOpenAnimation } = this.state;
+    const { currentCode } = this.state;
     const { code, unlock } = this.props;
 
     const guess = currentCode + val;

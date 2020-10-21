@@ -149,8 +149,8 @@ class ClickableRoom extends React.Component {
 
   getDialogue = () => {
     const { activeDialogue } = this.context;
-    const { backgroundDimensions } = this.state;
-    const { top: offsetFromTop } = this.getOffset();
+    // const { backgroundDimensions } = this.state;
+    // const { top: offsetFromTop } = this.getOffset();
 
     return (
       <div

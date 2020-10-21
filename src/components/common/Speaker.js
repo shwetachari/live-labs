@@ -48,6 +48,7 @@ class Speaker extends React.Component {
               width: 'auto',
             }}
             onClick={this.togglePlay}
+            alt="Speaker"
           />
           <ReactHowler src={src} playing={isPlaying} onEnd={this.stopPlay} />
         </div>

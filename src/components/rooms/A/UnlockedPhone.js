@@ -80,7 +80,12 @@ class UnlockedPhone extends React.Component {
         <div className="voicemails">
           <div className="record" onClick={this.togglePlayOptions}>
             <div className="left">
-              <div className="contact">My Boss 👿</div>
+              <div className="contact">
+                My Boss{' '}
+                <span role="img" aria-label="Devil">
+                  👿
+                </span>
+              </div>
               <div className="location">iPhone</div>
             </div>
             <div className="right">

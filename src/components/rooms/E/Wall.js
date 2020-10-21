@@ -14,7 +14,9 @@ class RoomEWall extends React.Component {
 
   showPeriodicTable = () => {
     const { setFields } = this.context;
-    const modalContent = <img src={periodicTable} className="periodicTable" />;
+    const modalContent = (
+      <img src={periodicTable} className="periodicTable" alt="Periodic Table" />
+    );
     setFields({ modalContent });
   };
 
@@ -90,7 +92,7 @@ class RoomEWall extends React.Component {
       <div className="roomECarousels">
         {elementLockConfigs.map((config, i) => (
           <div key={`roomECarousel_${i}`}>
-            <img src={config.icon} />
+            <img src={config.icon} alt="Icon" />
             <CarouselLock
               key={`room_e_carousel_${i}`}
               namedId={`room_e_carousel_${i}`}

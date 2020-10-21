@@ -19,6 +19,7 @@ class RoomBScreens extends React.Component {
           backgroundColor: 'white',
         }}
         src={src}
+        alt="Pigpen Cipher Key"
       />
     );
   }
