@@ -36,12 +36,15 @@ const ExitScene = (props) => {
         Unless...
       </div>
 
-      <div style={{ fontSize: 60 }} className="animated delay5">
+      <div
+        style={{ fontSize: 60, marginBottom: '2%' }}
+        className="animated delay5"
+      >
         Perhaps you weren't truly alone?
       </div>
 
       <div
-        style={{ fontSize: 50, color: '#e3c3d9' }}
+        style={{ fontSize: 30, color: '#e3c3d9' }}
         className="animated delay6"
       >
         ✧ Happy birthday to the OG twins, Sneha and Shruti! ✧

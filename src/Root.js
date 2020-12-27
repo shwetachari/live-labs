@@ -200,29 +200,33 @@ class Root extends React.Component {
   };
 
   render() {
+    const { isFinished } = this.state;
     return (
       <AppContext.Provider value={this.state}>
         <View />
-        {this.state.isFinished ? (
-          <ReactHowler src={`/sounds/outro.mp3`} html5={true} playing loop />
-        ) : (
-          <div>
-            <ReactHowler
-              src={`/sounds/intro_track.mp3`}
-              html5={true}
-              volume={0.2}
-              playing
-              loop
-            />
-            <ReactHowler
-              src={`/sounds/soundtrack.wav`}
-              html5={true}
-              playing
-              loop
-            />
-            <SoundManager />
-          </div>
-        )}
+        <ReactHowler
+          src={`/sounds/outro.mp3`}
+          html5={true}
+          playing={isFinished}
+          loop
+        />
+        <div>
+          <ReactHowler
+            src={`/sounds/intro_track.mp3`}
+            html5={true}
+            volume={0.2}
+            playing={!isFinished}
+            loop
+          />
+          <ReactHowler
+            src={`/sounds/soundtrack.wav`}
+            html5={true}
+            playing={!isFinished}
+            loop
+          />
+          <SoundManager />
+        </div>
+        )
       </AppContext.Provider>
     );
   }
