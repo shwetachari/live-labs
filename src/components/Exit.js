@@ -41,8 +41,15 @@ const ExitScene = (props) => {
       </div>
 
       <div
+        style={{ fontSize: 50, color: '#e3c3d9' }}
+        className="animated delay6"
+      >
+        ✧ Happy birthday to the OG twins, Sneha and Shruti! ✧
+      </div>
+
+      <div
         style={{ marginTop: '6%' }}
-        className="button animated delay6"
+        className="button animated delay7"
         onClick={() => window.location.reload()}
       >
         play again?

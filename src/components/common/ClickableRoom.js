@@ -1,6 +1,9 @@
 import React from 'react';
 import { AppContext, BACK_NAV_MAP } from '../../AppContext';
 import FullScreenModal from '../FullScreenModal';
+import HintModal from '../HintModal';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faQuestionCircle } from '@fortawesome/free-solid-svg-icons';
 import '../../styles/Room.css';
 
 class ClickableRoom extends React.Component {
@@ -190,6 +193,11 @@ class ClickableRoom extends React.Component {
     );
   };
 
+  getHintModalContent = () => {
+    const { setFields } = this.context;
+    setFields({ modalContent: <HintModal /> });
+  };
+
   render() {
     const { background, interactiveElementConfigs = [] } = this.props;
     const { backgroundDimensions } = this.state;
@@ -219,6 +227,19 @@ class ClickableRoom extends React.Component {
             this.getInteractiveElement(config, i)
           )}
           {this.getDialogue()}
+          {!modalContent && (
+            <div
+              className="hint"
+              onClick={this.getHintModalContent}
+              style={{
+                top: offsetFromTop,
+                right: offsetFromLeft,
+                zIndex: 201,
+              }}
+            >
+              <FontAwesomeIcon icon={faQuestionCircle} />
+            </div>
+          )}
           {BACK_NAV_MAP[view] && !modalContent && (
             <div
               className="back"

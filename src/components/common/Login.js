@@ -72,11 +72,7 @@ class Login extends React.Component {
               onChange={(e, val) => this.onChange(e, val)}
               value={currentPassword}
             ></input>
-            <div
-              className="hint"
-              onMouseEnter={this.showHint}
-              onMouseLeave={this.hideHint}
-            >
+            <div onMouseEnter={this.showHint} onMouseLeave={this.hideHint}>
               <FontAwesomeIcon icon={faInfo} className="icon" />
             </div>
           </div>

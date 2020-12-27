@@ -19,6 +19,19 @@
   cursor: pointer;
 }
 
+.clickableRoom .hint {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  font-size: 40px;
+  position: fixed;
+  display: block;
+}
+
+.clickableRoom .hint:hover {
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+}
+
 .clickableRoom .interactive:hover {
   cursor: pointer;
 }

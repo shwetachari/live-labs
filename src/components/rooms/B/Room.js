@@ -22,7 +22,6 @@ class RoomB extends React.Component {
   };
 
   toggleMorse = () => {
-    console.log('toggling morse');
     this.setState({
       isPlayingMorse: !this.state.isPlayingMorse,
     });
@@ -35,10 +34,7 @@ class RoomB extends React.Component {
   };
 
   getSpeaker = () => {
-    const { isPlayingMorse } = this.state;
     const { setFields } = this.context;
-
-    console.log({ isPlayingMorse });
 
     const modalContent = (
       <div

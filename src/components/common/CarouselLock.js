@@ -18,10 +18,6 @@ class Column extends React.Component {
     };
   }
 
-  componentWillReceiveProps(...args) {
-    console.log('args', args);
-  }
-
   dragStart = () => {
     return !this.props.isOpen;
   };
@@ -35,7 +31,6 @@ class Column extends React.Component {
   setNumber = () => {
     const { checkMatch, id } = this.props;
     if (checkMatch(this.getNumber(), id)) {
-      console.log('setting disabled');
       this.setState({ disabled: true });
     }
   };

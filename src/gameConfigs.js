@@ -15,11 +15,6 @@ import pigpenJR from './images/rooms/B/pigpen_cipher_key_j_r.svg';
 import pigpenSV from './images/rooms/B/pigpen_cipher_key_s_v.svg';
 import pigpenWZ from './images/rooms/B/pigpen_cipher_key_w_z.svg';
 
-/*
-Footer to display only in modal that the element icons are displayed:
-Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
-*/
-
 const elements = {
   rhino: {
     elements: [
