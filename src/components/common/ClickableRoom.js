@@ -21,10 +21,12 @@ class ClickableRoom extends React.Component {
   componentDidMount() {
     // this.getBackgroundStyles();
     window.addEventListener('resize', this.updateDimensions);
+    window.addEventListener('orientationchange', this.updateDimensions);
   }
 
   componentWillUnmount() {
     window.removeEventListener('resize', this.updateDimensions);
+    window.removeEventListener('orientationchange', this.updateDimensions);
   }
 
   moveTo = (view) => {

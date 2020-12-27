@@ -2,6 +2,8 @@ import * as _ from 'lodash';
 import * as uuid from 'uuid';
 import React from 'react';
 import ReactHowler from 'react-howler';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMobileAlt, faSyncAlt } from '@fortawesome/free-solid-svg-icons';
 import { AppContext, VIEWS, BACK_NAV_MAP } from './AppContext';
 import View from './components/View';
 import { nonograms, yellowDoorKey, leftConfigs } from './gameConfigs';
@@ -203,7 +205,31 @@ class Root extends React.Component {
     const { isFinished } = this.state;
     return (
       <AppContext.Provider value={this.state}>
-        <View />
+        <div
+          className="portrait"
+          style={{
+            display: 'block',
+            position: 'fixed',
+            color: 'white',
+            textAlign: 'center',
+            fontFamily: `'Share Tech Mono', sans-serif`,
+            fontSize: '2em',
+            padding: '50px 5px',
+          }}
+        >
+          <p>Please rotate your device.</p>
+          <div style={{ fontSize: '1.5em' }}>
+            <FontAwesomeIcon style={{ padding: 20 }} icon={faMobileAlt} />
+            <FontAwesomeIcon style={{ padding: 20 }} icon={faSyncAlt} />
+            <FontAwesomeIcon
+              style={{ transform: 'rotate(90deg)', padding: 20 }}
+              icon={faMobileAlt}
+            />
+          </div>
+        </div>
+        <div className="landscape">
+          <View />
+        </div>
         <ReactHowler
           src={`/sounds/outro.mp3`}
           html5={true}

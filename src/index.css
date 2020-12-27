@@ -9,9 +9,29 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+@media (orientation: landscape) {
+  .portrait {
+    opacity: 0;
+  }
+  .landscape {
+    opacity: 1;
+  }
+}
+
+@media (orientation: portrait) {
+  .landscape {
+    position: fixed;
+    opacity: 0;
+  }
+  .portrait {
+    opacity: 1;
+  }
 }
