@@ -170,7 +170,7 @@ class Root extends React.Component {
 
     if (isDEDoorLocked)
       return isQuitter
-        ? `The voicemail on the phone says the word "Neuron" opens the room with the yellow doors. In the tiled hallway, there is a key that translates those letters into numbers. Combine your key with your twin's key to translate the full word. Use this numerical code to open the yellow doors in the room with the broken glass.`
+        ? `The voicemail on the phone says the word "neuron" opens the room with the yellow doors. In the tiled hallway, there is a key that translates those letters into numbers. Combine your key with your twin's key to translate the full word. Use this numerical code to open the yellow doors in the room with the broken glass.`
         : 'Make sure your sound is on. Have you checked the voicemails on the phone in the bedroom? Check each room thoroughly for any other symbols that match the mentioned doors.';
 
     if (isRoomBBoxLocked && !isRoomBBoxOpen)
