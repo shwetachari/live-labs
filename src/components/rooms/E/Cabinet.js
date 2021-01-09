@@ -4,6 +4,7 @@ import ClickableRoom from '../../common/ClickableRoom';
 import roomECabinet from '../../../images/rooms/E/cabinet.png';
 import '../../../fonts/pigpenCipher/stylesheet.css';
 import '../../../styles/Cabinet.scss';
+import { faCookie } from '@fortawesome/free-solid-svg-icons';
 
 class RoomECabinet extends React.Component {
   static contextType = AppContext;
@@ -22,12 +23,12 @@ class RoomECabinet extends React.Component {
         year: '2011',
         color: 'springer',
         titleStyle: 'fancy',
+        tilted: 'right',
       },
       {
         title: 'Telepathy in Rats',
         year: '2011',
         color: 'springer',
-        tilted: true,
       },
       {
         title: 'Twin Telepathy',
@@ -35,13 +36,15 @@ class RoomECabinet extends React.Component {
         year: '2001',
         color: 'blue',
       },
-      formattedRoomEBooks[0],
+      {
+        ...formattedRoomEBooks[0],
+        tilted: 'left',
+      },
       {
         title: 'The Scientific Method',
         year: '1980',
         color: 'green',
         titleStyle: 'fancy',
-        tilted: true,
       },
       {
         title: 'Psychology of Twins',
@@ -57,7 +60,10 @@ class RoomECabinet extends React.Component {
         titleStyle: 'fancy',
       },
       formattedRoomEBooks[1],
-      formattedRoomEBooks[2],
+      {
+        ...formattedRoomEBooks[2],
+        tilted: 'left',
+      },
       {
         title: 'Understanding the Human Mind',
         year: '2016',
@@ -74,6 +80,7 @@ class RoomECabinet extends React.Component {
         title: 'Psychology',
         year: '2010',
         color: 'springer',
+        tilted: 'left',
       },
       formattedRoomEBooks[3],
       {
@@ -81,7 +88,6 @@ class RoomECabinet extends React.Component {
         year: '1980',
         color: 'green',
         titleStyle: 'fancy',
-        tilted: true,
       },
       {
         title: 'The Human Cortex',
@@ -105,7 +111,7 @@ class RoomECabinet extends React.Component {
         title: 'The CBT Method',
         year: '2007',
         color: 'green',
-        tilted: true,
+        tilted: 'right',
       },
       {
         title: 'Twin Studies: A History',
@@ -113,7 +119,10 @@ class RoomECabinet extends React.Component {
         color: 'green',
         titleStyle: 'fancy',
       },
-      formattedRoomEBooks[5],
+      {
+        ...formattedRoomEBooks[5],
+        tilted: 'right',
+      },
       {
         title: 'The Science of Human Emotion',
         year: '2019',
@@ -124,7 +133,7 @@ class RoomECabinet extends React.Component {
         title: 'The DBT Handbook',
         year: '2009',
         color: 'springer',
-        tilted: true,
+        tilted: 'left',
       },
       {
         title: 'Identical Twins',
@@ -142,7 +151,7 @@ class RoomECabinet extends React.Component {
         title: 'Social Psychology',
         year: '2011',
         color: 'green',
-        tilted: true,
+        tilted: 'right',
       },
       {
         title: 'Cognition in Rats',
@@ -160,7 +169,15 @@ class RoomECabinet extends React.Component {
     const modalContent = (
       <div className="bookshelf">
         {fillerBooks.map((book) => (
-          <div className={book.tilted ? 'book-tilted' : ''}>
+          <div
+            className={
+              book.tilted === 'right'
+                ? 'book-tilted book-tilted-right'
+                : book.tilted === 'left'
+                ? 'book-tilted book-tilted-left'
+                : ''
+            }
+          >
             <div
               className={`book book-${book.color} ${book.titleStyle || 'bold'}`}
             >

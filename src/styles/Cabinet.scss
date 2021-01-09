@@ -60,8 +60,12 @@
     width: 74px;
   }
 
-  .book-tilted > .book {
+  .book-tilted-right > .book {
     transform: translateY(-3px) translateX(15px) rotate(9deg);
+  }
+
+  .book-tilted-left > .book {
+    transform: translateY(-3px) translateX(15px) rotate(-9deg);
   }
 
   .book:hover {
