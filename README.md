@@ -1,13 +1,12 @@
 # LIVE Labs
 
-<i>You and your twin have been kidnapped by evil scientists. Use your twin telepathy to escape your individual labs.</i>
+<i>You and your twin each wake up in a strange laboratory that may or may not perform experiments on twins. Use your ✨twin telepathy✨ to escape your individual labs.</i>
 
-
-## Check out the project here:
 One link for each twin 👯
 
-| https://live-labs.vercel.app/moon | https://live-labs.vercel.app/sun |
+| 🌙 | ☀️ |
 | :-------------------------------: | :------------------------------: |
+| https://live-labs.vercel.app/moon | https://live-labs.vercel.app/sun |
 
 <br />
 
