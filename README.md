@@ -1,16 +1,27 @@
-## LIVE Labs
+# LIVE Labs
 
-#### Check out the project here:
+<i>You and your twin have been kidnapped by evil scientists. Use your twin telepathy to escape your individual labs.</i>
 
-- https://live-labs.vercel.app/moon
-- https://live-labs.vercel.app/sun
 
-#### Notes/Caveats:
+## Check out the project here:
+One link for each twin 👯
 
-- This is a hacky, quickly thrown together project made as a birthday present for a pair of twins. If you would like to **completely ruin your gaming experience**, take a look at the [game configs](https://github.com/shwetachari/live-labs/blob/main/src/gameConfigs.js) for the answers to all the puzzles.
-- Compatible with Google Chrome. Use any other browsers at your own risk.
-- Not responsive -- breaks at small resolutions, optimized for 1440px x 900px window size
-- Absolutely not the most performant website around. Patience required while assets load.
+| https://live-labs.vercel.app/moon | https://live-labs.vercel.app/sun |
+| :-------------------------------: | :------------------------------: |
+
+<br />
+
+## Notes/Caveats:
+
+- This is a just-for-fun, quickly thrown together project made as a birthday present for my favorite pair of twins. If you would like to **completely ruin your gaming experience**, take a look at the [game configs](https://github.com/shwetachari/live-labs/blob/main/src/gameConfigs.js) for the answers to all the puzzles. (please don't though)
+- Compatible with Google Chrome. Use any other browsers at your own risk. 🌚
+- Not responsive -- breaks at small resolutions, optimized for 1440px x 900px window size. Please forgive me, mobile-firsters. 🙇‍♀️
+- Absolutely not the most performant website around. Patience required while assets load. 🦗
+- Average playtime is around 2-3 hours (based on a dataset of like 3 playthroughs).
+- Game state is persisted in your browser's local storage. As long as you don't clear your cache, you can safely exit and pick up where you left off later.
+- Yes, LIVE is EVIL spelled backwards. Probably just a coincidence, though. 🙂
+
+<br />
 
 ---
 
